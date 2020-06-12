@@ -1,0 +1,199 @@
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background: #ffffff;
+  margin: 0;
+  font-size: 13px;
+  color: #948686;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+}
+a,
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #111111;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #111111;
+  
+}
+h3{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #111111;
+
+}
+h5 {
+  text-align: center;
+  color: #111111;
+}
+a,
+img {
+  outline: none;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a:hover{
+  color: #f7a431;
+}
+
+
+p {
+  margin: 0 0 10px;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  color: rgb(104, 98, 98);
+}
+img {
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 10px;
+}
+aside {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+aside,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+#wrapper {
+  width: 96%;
+  max-width: 920px;
+  margin: auto;
+  padding: 2%;
+}
+
+#main {
+  width:60%;
+  margin-right: 5%;
+  float: left;
+}
+
+aside {
+  width: 32%;
+  float: right;
+  background: #fae1bd;
+  padding: 1%;
+}
+
+footer {
+  float: left;
+  clear: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+  border-top: 3px solid #0021da;
+  padding-top: 1%;
+}
+
+header h1{
+  height: 70px;
+  width: 160px;
+  float: left;
+  
+}
+
+header nav {
+  float: right;
+  margin-top: 40px;
+  
+}
+
+header nav li {
+  display: inline;
+  margin-left: 15px;
+}
+
+
+#banner {
+  float: left;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#banner img {
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  ;
+  
+}
+
+.column {
+  flex: 33%;
+  padding: 0 4px;
+  align-self: end;
+  
+  
+}
+.column img {
+  margin-top: 8px;
+  height: 200px;
+
+}
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  #goTo {
+    display: block;
+  }
+
+  header nav,
+  #main,
+  aside {
+    float: left;
+    clear: left;
+    margin: 0 0 10px; 
+  }
+
+  header nav li {
+    margin: 0;
+    background: #efefef;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  header nav a {
+    display: block;
+    padding: 10px; 
+    text-align: center;
+  }
+  .row {
+    display: block;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+}
